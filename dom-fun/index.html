@@ -1,57 +1,84 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    
-    <title>DOM Fun!</title>
-  </head>
-  <body>
-    <div class="container">
-      <!--
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
+
+  <title>DOM Fun!</title>
+</head>
+
+<body>
+  <div class="container">
+    <!--
       exercise 1
     -->
-            <div class="jumbotron">
-                    <h1 class="display-4">Button</h1>
-                    <p id="text" class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec porttitor lectus. Quisque et lacinia nibh. Donec mollis suscipit ex vel viverra. Nunc fringilla, urna in gravida interdum, felis sem faucibus massa, eu accumsan nunc sem a velit. Sed porta ipsum sed libero accumsan pulvinar. Vivamus et luctus ante, et vehicula quam. Nullam fringilla elit eu massa dapibus tincidunt nec ut purus. Nullam molestie urna eget nibh consectetur suscipit. Suspendisse suscipit a turpis dapibus tincidunt. Vestibulum enim leo, hendrerit at magna sed, gravida ullamcorper ipsum. Nam non suscipit lectus, ac tempus quam. Mauris bibendum magna id felis fermentum, sed sodales elit pharetra.</p>
-                    <hr class="my-4">
-                    <p>Clicking on the button the font, font size, and color of the paragraph text will be changed.</p>
-                    <button id="style_js" class="btn btn-secondary btn-lg btn-block">Font</button>
-                  </div>
-         <!--
+    <div class="jumbotron">
+      <h1 class="display-4">Button</h1>
+      <p id="text" class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec porttitor lectus. Quisque et lacinia nibh. Donec
+        mollis suscipit ex vel viverra. Nunc fringilla, urna in gravida interdum, felis sem faucibus massa, eu accumsan nunc
+        sem a velit. Sed porta ipsum sed libero accumsan pulvinar. Vivamus et luctus ante, et vehicula quam. Nullam fringilla
+        elit eu massa dapibus tincidunt nec ut purus. Nullam molestie urna eget nibh consectetur suscipit. Suspendisse suscipit
+        a turpis dapibus tincidunt. Vestibulum enim leo, hendrerit at magna sed, gravida ullamcorper ipsum. Nam non suscipit
+        lectus, ac tempus quam. Mauris bibendum magna id felis fermentum, sed sodales elit pharetra.</p>
+      <hr class="my-4">
+      <p>Clicking on the button the font, font size, and color of the paragraph text will be changed.</p>
+      <button id="style_js" class="btn btn-secondary btn-lg btn-block">Font</button>
+    </div>
+    <!--
       exercise 2
     -->
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Submit</h5>
-                      <p class="card-text">You will see the result in the console.</p>
-                  <form onsubmit="styleJs()" id="form1">
-                    <div class="row">
-                      <div class="col">
-                        <input type="text" class="form-control" placeholder="First name" id="fname" vlaue="text" >
-                      </div>
-                      <div class="col">
-                        <input type="text" class="form-control" placeholder="Last name" id="lname"  >
-                      </div>
-                    </div>
-                    <button type="submit" id="Submit" class="btn btn-secondary btn-sm float-right mt-2">Save</button>
-                  </form>
-                </div>
-              </div>
-                  
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Submit</h5>
+        <p class="card-text">You will see the result in the console.</p>
+        <form onsubmit="styleJs()" id="form1">
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="First name" id="fname" vlaue="text">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Last name" id="lname">
+            </div>
+          </div>
+          <button type="submit" id="Submit" class="btn btn-secondary btn-sm float-right mt-2">Save</button>
+        </form>
+      </div>
     </div>
+
+
     <!---
       exercise 3
     -->
-    <center><button  type="button" class="btn btn-info btn-sm mt-3" id="text-back">Click to set paragraph background color</button>
-</center>
-   <script src="main.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-  </body>
+    <center>
+      <button type="button" class="btn btn-info btn-sm mt-3" id="text-back">Click to set paragraph background color</button>
+    </center>
+    <!--
+      exercise 4
+      Write a JavaScript function to get the value of the href,
+      hreflang, rel, target, and type attributes of the specified link.
+    -->
+    <div class="card mt-3">
+      
+      <div class="card body">
+        <h5 class="card-title mt-3 pl-3">Get Attributtes</h5>
+    <p><a class="pl-3" id="w3r" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="https://www.w3resource.com/">w3resource</a></p>
+<button class="btn btn-info btn-sm" onclick="getAttributes()">Click here to get  attributes value</button>
+</div>
+</div>
+  </div>
+  <script src="main.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>

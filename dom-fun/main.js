@@ -28,3 +28,16 @@ var backColour=document.getElementById("text-back");
 backColour.onclick=function(){
     text.style.background="white";
 }
+/*
+exercise 4
+*/
+var link=document.getElementById("w3r");
+function getAttributes(){
+    var href=link.href;
+    var hreflang=link.hreflang;
+    var rel=link.rel;
+    var target=link.target;
+    var type=link.type;
+    var attributes="href: "+href+", hreflang: "+hreflang+", rel: "+ rel+", target: "+ target+", type: "+type;
+    alert(attributes);
+}
