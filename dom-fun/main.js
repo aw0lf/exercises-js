@@ -20,3 +20,11 @@ console.log("Hello"+fname+" "+lname+"!");
 
 }
 formInput.onsubmit=styleJs();
+
+/*
+exercise 3
+*/
+var backColour=document.getElementById("text-back");
+backColour.onclick=function(){
+    text.style.background="white";
+}
