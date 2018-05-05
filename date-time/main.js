@@ -1,6 +1,6 @@
 /*
 
-Set and display curent day and time
+Set and display current day and time
 
 */
 var today = new Date();
