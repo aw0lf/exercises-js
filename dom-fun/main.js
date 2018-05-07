@@ -53,3 +53,37 @@ function insert_Row(){
     cell2.innerHTML="New2";
     
 }
+/*
+exercise 6
+*/
+
+/*
+There was a problem during the unit test, 
+the function dosn't enter the text into the selected cell.
+*/
+
+
+function setCellPos(){
+    
+    var nrow=document.getElementById("userRow").value;
+    var ncol=document.getElementById("userCol").value;
+    
+    var set_col=document.getElementsByTagName("td");
+ 
+    if(nrow>1){
+        var index=ncol+nrow;
+        set_col[index-1].innerHTML="!";
+    }
+    else if(nrow==1){
+        set_col[ncol-1].innerHTML="!";
+    }
+    
+  
+}
+/*
+exercise 7
+*/
+function removeColor(){
+    sc=document.getElementById("colorSelect");
+    sc.remove(sc.selectedIndex)
+}
